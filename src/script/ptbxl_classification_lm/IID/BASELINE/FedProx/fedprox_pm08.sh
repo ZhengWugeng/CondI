@@ -1,0 +1,111 @@
+python main.py \
+    --task ptbxl_classification_lm_cnum32_dist0_skew0_seed0_full_modal_local_missing \
+    --model fedprox \
+    --algorithm multimodal.ptbxl_classification_lm.baselines.fedprox \
+    --sample uniform \
+    --aggregate other \
+    --num_rounds 1000 \
+    --proportion 0.33 \
+    --num_epochs 3 \
+    --learning_rate 0.01 \
+    --lr_scheduler 0 \
+    --learning_rate_decay 1.0 \
+    --batch_size 32 \
+    --test_batch_size 32 \
+    --gpu 0 \
+    --seed 12345 \
+    --fedmsplit_prox_lambda 0.01 \
+    --ps 0.2 \
+    --pm 0.8 \
+    --graph_quantile 0.0 \
+    --wandb &
+
+
+python main.py \
+    --task ptbxl_classification_lm_cnum32_dist0_skew0_seed0_full_modal_local_missing \
+    --model fedprox \
+    --algorithm multimodal.ptbxl_classification_lm.baselines.fedprox \
+    --sample uniform \
+    --aggregate other \
+    --num_rounds 1000 \
+    --proportion 0.33 \
+    --num_epochs 3 \
+    --learning_rate 0.01 \
+    --lr_scheduler 0 \
+    --learning_rate_decay 1.0 \
+    --batch_size 32 \
+    --test_batch_size 32 \
+    --gpu 0 \
+    --seed 12345 \
+    --fedmsplit_prox_lambda 0.01 \
+    --ps 0.4 \
+    --pm 0.8 \
+    --graph_quantile 0.0 \
+    --wandb &
+
+python main.py \
+    --task ptbxl_classification_lm_cnum32_dist0_skew0_seed0_full_modal_local_missing \
+    --model fedprox \
+    --algorithm multimodal.ptbxl_classification_lm.baselines.fedprox \
+    --sample uniform \
+    --aggregate other \
+    --num_rounds 1000 \
+    --proportion 0.33 \
+    --num_epochs 3 \
+    --learning_rate 0.01 \
+    --lr_scheduler 0 \
+    --learning_rate_decay 1.0 \
+    --batch_size 32 \
+    --test_batch_size 32 \
+    --gpu 0 \
+    --seed 12345 \
+    --fedmsplit_prox_lambda 0.01 \
+    --ps 0.6 \
+    --pm 0.8 \
+    --graph_quantile 0.0 \
+    --wandb &
+
+python main.py \
+    --task ptbxl_classification_lm_cnum32_dist0_skew0_seed0_full_modal_local_missing \
+    --model fedprox \
+    --algorithm multimodal.ptbxl_classification_lm.baselines.fedprox \
+    --sample uniform \
+    --aggregate other \
+    --num_rounds 1000 \
+    --proportion 0.33 \
+    --num_epochs 3 \
+    --learning_rate 0.01 \
+    --lr_scheduler 0 \
+    --learning_rate_decay 1.0 \
+    --batch_size 32 \
+    --test_batch_size 32 \
+    --gpu 0 \
+    --seed 12345 \
+    --fedmsplit_prox_lambda 0.01 \
+    --ps 0.8 \
+    --pm 0.8 \
+    --graph_quantile 0.0 \
+    --wandb &
+
+python main.py \
+    --task ptbxl_classification_lm_cnum32_dist0_skew0_seed0_full_modal_local_missing \
+    --model fedprox \
+    --algorithm multimodal.ptbxl_classification_lm.baselines.fedprox \
+    --sample uniform \
+    --aggregate other \
+    --num_rounds 1000 \
+    --proportion 0.33 \
+    --num_epochs 3 \
+    --learning_rate 0.01 \
+    --lr_scheduler 0 \
+    --learning_rate_decay 1.0 \
+    --batch_size 32 \
+    --test_batch_size 32 \
+    --gpu 0 \
+    --seed 12345 \
+    --fedmsplit_prox_lambda 0.01 \
+    --ps 1.0 \
+    --pm 0.8 \
+    --graph_quantile 0.0 \
+    --wandb &
+

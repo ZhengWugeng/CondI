@@ -1,0 +1,21 @@
+python main.py \
+    --task ptbxl_classification_lm_cnum32_dist1_skew0.5_seed0_full_modal_local_missing \
+    --model mifl_contrastive2 \
+    --algorithm multimodal.ptbxl_classification_lm.baselines.mifl_contrastive2 \
+    --sample uniform \
+    --aggregate other \
+    --num_rounds 1000 \
+    --proportion 0.33 \
+    --num_epochs 3 \
+    --learning_rate 0.01 \
+    --lr_scheduler 0 \
+    --learning_rate_decay 1.0 \
+    --batch_size 32 \
+    --test_batch_size 32 \
+    --gpu 0 \
+    --seed 123456 \
+    --fedmsplit_prox_lambda 0.00 \
+    --ps 1.0 \
+    --pm 0.2 \
+    --graph_quantile 0.0 \
+    --wandb 

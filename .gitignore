@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Dataset files (too large for git — see src/benchmark/RAW_DATA/PTBXL/README.md)
+src/benchmark/RAW_DATA/PTBXL/*.npy
+src/benchmark/RAW_DATA/PTBXL/*.pkl
+src/benchmark/RAW_DATA/PTBXL/records100/
+
+# Model checkpoints
+src/fedtask/*/checkpoints/
+
+# Training logs and records
+src/fedtask/*/record/
+src/fedtask/*/log/
+
+# Runtime plots
+src/plots/scatter_data.npz
+src/plots/imputation_scatter*.png
+
+# WandB
+wandb/
+
+# Editor / OS
+.DS_Store
+.idea/
+*.swp

@@ -1,0 +1,21 @@
+python main.py \
+    --task ptbxl_classification_lm_cnum32_dist0_skew0_seed0_full_modal_local_missing \
+    --model FedInMM \
+    --algorithm multimodal.ptbxl_classification_lm.baselines.FedInMM \
+    --sample uniform \
+    --aggregate other \
+    --num_rounds 1000 \
+    --proportion 0.33 \
+    --num_epochs 3\
+    --learning_rate 0.01 \
+    --lr_scheduler 0 \
+    --learning_rate_decay 1.0 \
+    --batch_size 32 \
+    --test_batch_size 32 \
+    --gpu 2 \
+    --seed 12345 \
+    --ps 1.0 \
+    --pm 0.8 \
+    --graph_quantile 0.0 \
+    --optimizer Adam \
+    --wandb 
